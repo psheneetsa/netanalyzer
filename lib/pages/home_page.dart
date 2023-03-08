@@ -175,68 +175,7 @@ class _WifiDetailState extends State<HomePage> {
               ),
             ),
           ),
-          // Card(
-          //   child: ListTile(
-          //     leading: const Icon(Icons.signal_cellular_alt),
-          //     title: const Text('Internet Service Provider (ISP)'),
-          //     subtitle: Column(
-          //       crossAxisAlignment: CrossAxisAlignment.start,
-          //       children: [
-          //         FutureBuilder<InternetProvider?>(
-          //           future: ISPLoader().load(),
-          //           builder: (
-          //             BuildContext context,
-          //             AsyncSnapshot<InternetProvider?> snapshot,
-          //           ) {
-          //             if (snapshot.hasData && snapshot.data != null) {
-          //               return Column(
-          //                 crossAxisAlignment: CrossAxisAlignment.start,
-          //                 children: [
-          //                   CustomTile(
-          //                     leading: Icon(
-          //                       Icons.public,
-          //                       color: Theme.of(context).colorScheme.secondary,
-          //                     ),
-          //                     child: Text(snapshot.data!.ip),
-          //                   ),
-          //                   CustomTile(
-          //                     leading: Icon(
-          //                       Icons.dns,
-          //                       color: Theme.of(context).colorScheme.secondary,
-          //                     ),
-          //                     child: Text(snapshot.data!.isp),
-          //                   ),
-          //                   CustomTile(
-          //                     leading: Icon(
-          //                       Icons.location_on,
-          //                       color: Theme.of(context).colorScheme.secondary,
-          //                     ),
-          //                     child: Text(snapshot.data!.location.address),
-          //                   ),
-          //                   const SizedBox(height: 5),
-          //                   const Divider(height: 3)
-          //                 ],
-          //               );
-          //             }
-          //             if (snapshot.hasError) {
-          //               return const Text('Unable to fetch ISP details');
-          //             }
-          //             return const Text('Loading ISP details..');
-          //           },
-          //         ),
-          //         const SizedBox(height: 10),
-          //         ElevatedButton.icon(
-          //           onPressed: () {
-          //             _launchURL('https://fast.com');
-          //           },
-          //           icon: const Icon(Icons.speed),
-          //           label: const Text('Speed Test'),
-          //         ),
-          //         const SizedBox(height: 5),
-          //       ],
-          //     ),
-          //   ),
-          // ),
+
         ],
       ),
     );
