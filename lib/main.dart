@@ -5,6 +5,7 @@ import 'package:netanalyzer/helper/app_settings.dart';
 import 'package:netanalyzer/models/dark_theme_provider.dart';
 import 'package:netanalyzer/pages/home_page.dart';
 import 'package:netanalyzer/pages/settings_page.dart';
+import "package:flutter/services.dart";
 
 
 
@@ -72,6 +73,7 @@ class _HomePageState extends State<TabBarPage> {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
     final List<Widget> _children = [const HomePage(), const SettingsPage()];
     return Scaffold(
       body: Container(
