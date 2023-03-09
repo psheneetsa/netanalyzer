@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:netanalyzer/helper/app_settings.dart';
-
 import 'package:netanalyzer/models/dark_theme_provider.dart';
 import 'package:netanalyzer/pages/home_page.dart';
 import 'package:netanalyzer/pages/settings_page.dart';

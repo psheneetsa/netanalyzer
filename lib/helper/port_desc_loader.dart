@@ -4,8 +4,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:netanalyzer/models/port.dart';
 
-/// Do not put this method inside any class, be it top level function
-/// Because this method runs inside isolate.
 Future<Map<String, Port>> _parsePortDesc(String json) async {
   final Map<String, dynamic> ports = jsonDecode(json) as Map<String, dynamic>;
   final Map<String, Port> mPorts = {};
